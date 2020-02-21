@@ -1,0 +1,34 @@
+.bg-warm-black {
+    background-color: #003747;
+}
+
+.bg-bjut-blue {
+    background-color: #0096C3;
+}
+
+.bg-bubbles {
+    background-color: #E7F5F9;
+}
+
+.bg-maastricht-blue {
+    background-color: #001C24;
+}
+
+.link-bubbles {
+    color: #E7F5F9;
+}
+
+.link-bubbles:hover {
+    color: white;
+}
+
+.bg-transparent-8 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-img {
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}

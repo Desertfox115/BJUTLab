@@ -1,0 +1,9 @@
+.sidebar button {
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+
+.sidebar button:focus {
+    box-shadow: none;
+}

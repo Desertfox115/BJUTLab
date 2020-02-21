@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJUTLab - 登录</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login_custom.css">
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-dark bg-warm-black" aria-label="top-level">
+    <a class="navbar-brand">BJUTLab</a>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="register.html">注册</a></li>
+    </ul>
+</nav>
+<img src="img/bg.png" alt="text" class="bg-img">
+<div id="loginForm" class="container shadow rounded-lg float-md-none bg-transparent-8">
+    <div class="container">
+        <nav class="navbar" style="height: 60px;">
+        </nav>
+        <form>
+            <div class="form-group">
+                <label for="username">用户名</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">密 码</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button id="login" class="btn btn-primary" type="submit">登录</button>
+        </form>
+    </div>
+</div>
+<script src="vendor/jquery-3.4.1.slim.js"></script>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

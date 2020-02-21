@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJUTLab - 注册</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register_custom.css">
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-dark bg-warm-black" aria-label="top-level">
+    <a class="navbar-brand">BJUTLab</a>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="login.html">登录</a></li>
+    </ul>
+</nav>
+<img src="img/bg.png" alt="text" class="bg-img">
+<div id="registerForm" class="container shadow rounded-lg float-md-none bg-transparent-8">
+    <div class="container">
+        <nav class="navbar" style="height: 60px;">
+        </nav>
+        <form>
+            <div class="form-group">
+                <label for="username">用户名</label>
+                <input type="text" class="form-control" id="username" aria-label="hint">
+                <small id="hint" class="form-text text-muted"> </small>
+            </div>
+            <div class="form-group">
+                <label for="password">密 码</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group">
+                <label for="inlineFormCustomSelect">注册为</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option value="1" selected>学生</option>
+                    <option value="2">管理员</option>
+                </select>
+            </div>
+            <button id="register" class="btn btn-primary" type="submit">注册</button>
+        </form>
+    </div>
+</div>
+<script src="vendor/jquery-3.4.1.slim.js"></script>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
