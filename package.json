@@ -1,0 +1,30 @@
+{
+  "name": "bjutlab",
+  "version": "0.0.1",
+  "description": "Front-end of laboratory preorder system for Beijing University of Technology",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src/",
+    "lint-fix": "eslint --ext .js src/",
+    "dist-test": "npm run lint && gulp include-html copy-css copy-img && webpack --config webpack.config.js --mode=development",
+    "dist": "npm run lint && gulp include-html copy-css copy-img && webpack --config webpack.config.js --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woodykaixa/BJUTLab.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Woodykaixa/BJUTLab/issues"
+  },
+  "homepage": "https://github.com/Woodykaixa/BJUTLab#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.1.1",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "eslint": "^6.8.0"
+  }
+}

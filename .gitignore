@@ -1,2 +1,4 @@
-vendor
+src/vendor
 .idea
+node_modules
+dist
