@@ -21,20 +21,28 @@
     <div class="container">
         <nav class="navbar" style="height: 60px;">
         </nav>
-        <form>
+        <form autocomplete="on">
             <div class="form-group">
-                <label for="username">用户名</label>
-                <input type="text" class="form-control" id="username">
+                <label for="school_id">学/工号</label>
+                <input type="text" class="form-control" id="school_id" autocomplete="username">
             </div>
             <div class="form-group">
                 <label for="password">密 码</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password"
+                       autocomplete="current-password">
+            </div>
+            <div class="form-group">
+                <label for="identitySelect">用户类型</label>
+                <select class="custom-select mr-sm-2" id="identitySelect">
+                    <option value="1" selected>学生</option>
+                    <option value="2">管理员</option>
+                </select>
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button id="login" class="btn btn-primary" type="submit">登录</button>
+            <button id="login" class="btn btn-primary" type="button">登录</button>
         </form>
     </div>
 </div>

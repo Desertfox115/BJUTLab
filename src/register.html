@@ -21,24 +21,26 @@
     <div class="container">
         <nav class="navbar" style="height: 60px;">
         </nav>
-        <form>
+        <form autocomplete="on">
             <div class="form-group">
-                <label for="username">用户名</label>
-                <input type="text" class="form-control" id="username" aria-label="hint">
+                <label for="school_id">学/工号</label>
+                <input type="text" class="form-control" id="school_id" aria-label="hint"
+                       autocomplete="username">
                 <small id="hint" class="form-text text-muted"> </small>
             </div>
             <div class="form-group">
                 <label for="password">密 码</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password"
+                       autocomplete="current-password">
             </div>
             <div class="form-group">
-                <label for="inlineFormCustomSelect">注册为</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <label for="type">注册为</label>
+                <select class="custom-select mr-sm-2" id="type">
                     <option value="1" selected>学生</option>
                     <option value="2">管理员</option>
                 </select>
             </div>
-            <button id="register" class="btn btn-primary" type="submit">注册</button>
+            <button id="register" class="btn btn-primary" type="button">注册</button>
         </form>
     </div>
 </div>
