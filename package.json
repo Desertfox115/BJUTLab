@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js src/",
-    "lint-fix": "eslint --ext .js src/",
+    "lint-fix": "eslint --ext .js src/ --fix",
     "dist-test": "npm run lint && gulp include-html copy-css copy-img && webpack --config webpack.config.js --mode=development",
-    "dist": "npm run lint && gulp include-html copy-css copy-img && webpack --config webpack.config.js --mode=production"
+    "dist": "npm run lint-fix && gulp include-html copy-css copy-img && webpack --config webpack.config.js --mode=production"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,17 @@
   "homepage": "https://github.com/Woodykaixa/BJUTLab#readme",
   "devDependencies": {
     "@types/node": "^13.7.4",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.1.1",
+    "vue-loader": "^15.9.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "eslint": "^6.8.0"
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
   }
 }
